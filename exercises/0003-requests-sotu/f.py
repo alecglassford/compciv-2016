@@ -11,6 +11,6 @@ urls = ['https://www.whitehouse.gov/the-press-office/remarks-president-barack-ob
 
 for url in urls:
     resp = requests.get(url)
-    print resp.url
-    print len(resp.text)
-    print resp.text.lower().count('applause')
+    print(resp.url)
+    print(len(resp.text))
+    print(resp.text.lower().count('applause'))
