@@ -24,7 +24,7 @@ The data enumerates tasks funded by the "Bridging the Gap" levy and completed by
 
 #### HISTKEY, COMPKEY, WONO
 
-These two fields are both integers. They seem to be unique identifiers of some sort (each row has a different pair of numbers). E.g. `55823, 11268`
+These fields are integers seem to be unique identifiers of some sort (each row has a different set of numbers). E.g. `55823, 11268, 55823` (`HISTKEY` and `WONO` seem to be identical.)
 
 #### COMPTYPE
 
@@ -32,7 +32,7 @@ This is an integer that always seems to be either `68` or `13`. Something to do 
 
 #### ACTKEY, ACTCODE, PROJECT_ID, PROJECT_NA
 
-These seem to be unique for each project; `ACTKEY` is an integer, and the rest are strings. E.g. `1026, 'B-SRRP', 'TG355330', 'Sign Replacement Program'` is the set of codes for the "Sign Replacement Program." There are a number of programs (E.g. "Traffic Operations Spot Improvements", "Arborist Services", "Landscape Maintenance"), which seem to be the highest level of category for tasks.
+These seem to be jointly unique for each project; `ACTKEY` is an integer, and the rest are strings. E.g. `1026, 'B-SRRP', 'TG355330', 'Sign Replacement Program'` is the set of codes for the "Sign Replacement Program." There are a number of programs (E.g. "Traffic Operations Spot Improvements", "Arborist Services", "Landscape Maintenance"), which seem to be the highest level of category for tasks.
 
 #### PROGRAM_NA
 
