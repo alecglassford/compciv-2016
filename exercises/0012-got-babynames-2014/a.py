@@ -9,4 +9,4 @@ save_path = os.path.join('tempdata', 'ssa-babynames-nationwide-2014.txt')
 data = requests.get(URL).text
 with open(save_path, 'w') as save_file:
     save_file.write(data)
-print('There are', len(data.splitlines()), 'in', save_path)
+print('There are', len(data.splitlines()), 'lines in', save_path)
