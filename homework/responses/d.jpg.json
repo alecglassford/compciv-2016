@@ -1,0 +1,19 @@
+{"images":[
+	{"image":"d.jpg",
+	 "scores":[
+		 {"classifier_id":"Violet","name":"Violet","score":0.745188},
+		 {"classifier_id":"Sky_Scene","name":"Sky_Scene","score":0.70181},
+		 {"classifier_id":"Lightning","name":"Lightning","score":0.633872},
+		 {"classifier_id":"Octopus","name":"Octopus","score":0.630826},
+		 {"classifier_id":"Volcano","name":"Volcano","score":0.61659},
+		 {"classifier_id":"Explosion","name":"Explosion","score":0.615735},
+		 {"classifier_id":"Bird","name":"Bird","score":0.604728},
+		 {"classifier_id":"Lamp","name":"Lamp","score":0.598982},
+		 {"classifier_id":"Air_Vehicle","name":"Air_Vehicle","score":0.598258},
+		 {"classifier_id":"Outdoors","name":"Outdoors","score":0.596093},
+		 {"classifier_id":"Cliff_Diving","name":"Cliff_Diving","score":0.568048},
+		 {"classifier_id":"Iceberg","name":"Iceberg","score":0.564803},
+		 {"classifier_id":"Team_Field_Sport","name":"Team_Field_Sport","score":0.557453},
+		 {"classifier_id":"Lighthouse","name":"Lighthouse","score":0.554023},
+		 {"classifier_id":"Activity","name":"Activity","score":0.513242}]}]
+}

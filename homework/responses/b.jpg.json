@@ -1,0 +1,19 @@
+{"images":[
+	{"image":"b.jpg",
+	 "scores":[
+		 {"classifier_id":"Croquet","name":"Croquet","score":0.718437},
+		 {"classifier_id":"Outdoors","name":"Outdoors","score":0.694927},
+		 {"classifier_id":"Rice_Paddy","name":"Rice_Paddy","score":0.656287},
+		 {"classifier_id":"Yellow","name":"Yellow","score":0.641547},
+		 {"classifier_id":"Scene","name":"Scene","score":0.639729},
+		 {"classifier_id":"Kangaroo","name":"Kangaroo","score":0.621308},
+		 {"classifier_id":"Bird","name":"Bird","score":0.612419},
+		 {"classifier_id":"Green","name":"Green","score":0.593911},
+		 {"classifier_id":"Club_Sport","name":"Club_Sport","score":0.586651},
+		 {"classifier_id":"Campsite","name":"Campsite","score":0.58416},
+		 {"classifier_id":"Car","name":"Car","score":0.576438},
+		 {"classifier_id":"Kayaking","name":"Kayaking","score":0.574584},
+		 {"classifier_id":"Ostrich","name":"Ostrich","score":0.56587},
+		 {"classifier_id":"Golf","name":"Golf","score":0.557836},
+		 {"classifier_id":"Sky_Scene","name":"Sky_Scene","score":0.504196}]}]
+}

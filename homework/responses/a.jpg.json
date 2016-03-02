@@ -1,0 +1,22 @@
+{"images":[
+	{"image":"a.jpg",
+	 "scores":[
+		 {"classifier_id":"Gray","name":"Gray","score":0.700855},
+		 {"classifier_id":"Engine_Room","name":"Engine_Room","score":0.606346},
+		 {"classifier_id":"White","name":"White","score":0.60423},
+		 {"classifier_id":"Anechoic_Chamber","name":"Anechoic_Chamber","score":0.601933},
+		 {"classifier_id":"Human","name":"Human","score":0.59888},
+		 {"classifier_id":"Full_Body","name":"Full_Body","score":0.597456},
+		 {"classifier_id":"Icicles","name":"Icicles","score":0.593875},
+		 {"classifier_id":"Celebration","name":"Celebration","score":0.582363},
+		 {"classifier_id":"Indoors","name":"Indoors","score":0.575343},
+		 {"classifier_id":"Wedding","name":"Wedding","score":0.56418},
+		 {"classifier_id":"Head_and_Shoulders","name":"Head_and_Shoulders","score":0.55767},
+		 {"classifier_id":"Mixed_Color","name":"Mixed_Color","score":0.556795},
+		 {"classifier_id":"Coffee_Maker","name":"Coffee_Maker","score":0.549711},
+		 {"classifier_id":"Graduation","name":"Graduation","score":0.543434},
+		 {"classifier_id":"Neckless","name":"Neckless","score":0.54132},
+		 {"classifier_id":"Group_of_People","name":"Group_of_People","score":0.53566},
+		 {"classifier_id":"Animal_Tending","name":"Animal_Tending","score":0.513212},
+		 {"classifier_id":"Girl","name":"Girl","score":0.508235}]}]
+}

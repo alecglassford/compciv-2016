@@ -1,0 +1,15 @@
+{"images":[
+	{"image":"e.jpg",
+	 "scores":[
+		 {"classifier_id":"Bottle","name":"Bottle","score":0.647009},
+		 {"classifier_id":"Food_Processor","name":"Food_Processor","score":0.635552},
+		 {"classifier_id":"Spelunking","name":"Spelunking","score":0.628643},
+		 {"classifier_id":"Beverage","name":"Beverage","score":0.621857},
+		 {"classifier_id":"Natural_Activity","name":"Natural_Activity","score":0.610007},
+		 {"classifier_id":"Coffee_Maker","name":"Coffee_Maker","score":0.58283},
+		 {"classifier_id":"Burning","name":"Burning","score":0.567421},
+		 {"classifier_id":"Dog_Sled_Racing","name":"Dog_Sled_Racing","score":0.534456},
+		 {"classifier_id":"Taj_Mahal","name":"Taj_Mahal","score":0.515834},
+		 {"classifier_id":"Landmark","name":"Landmark","score":0.50794},
+		 {"classifier_id":"Scene","name":"Scene","score":0.504674}]}]
+}

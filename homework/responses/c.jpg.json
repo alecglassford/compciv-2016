@@ -1,0 +1,17 @@
+{"images":[
+	{"image":"c.jpg",
+	 "scores":[
+		 {"classifier_id":"People","name":"People","score":0.672836},
+		 {"classifier_id":"Human","name":"Human","score":0.602142},
+		 {"classifier_id":"Full_Body","name":"Full_Body","score":0.596691},
+		 {"classifier_id":"Mollusk","name":"Mollusk","score":0.596494},
+		 {"classifier_id":"Water_Polo","name":"Water_Polo","score":0.586138},
+		 {"classifier_id":"Hands","name":"Hands","score":0.581734},
+		 {"classifier_id":"Mixed_Color","name":"Mixed_Color","score":0.557008},
+		 {"classifier_id":"Dancing","name":"Dancing","score":0.538413},
+		 {"classifier_id":"Animal_Tending","name":"Animal_Tending","score":0.536858},
+		 {"classifier_id":"Synchronized_Swimming","name":"Synchronized_Swimming","score":0.524396},
+		 {"classifier_id":"Engine_or_Control_Room","name":"Engine_or_Control_Room","score":0.518878},
+		 {"classifier_id":"Outdoors","name":"Outdoors","score":0.51083},
+		 {"classifier_id":"Store","name":"Store","score":0.502595}]}]
+}
