@@ -14,7 +14,7 @@ def extract_usable_name(namestr):
             return part
     return namestr
 
-for section in MAGAZINE_SECTIONS:
+def classify(section):
     result = []
     load_filename = path.join(WRANGLED_DIR, section)
     print('Classifying genders for the {} section'.format(section))
@@ -25,10 +25,20 @@ for section in MAGAZINE_SECTIONS:
             row['gender'], row['ratio'] = analyze_name(row['usable_name'])
             print('Classfied {} as {}'.format(row['author'], row['gender']))
             result.append(row)
+    return result
 
+def save(result, section):
     save_filename = path.join(CLASSIFIED_DIR, section)
     with open(save_filename, 'w') as save_file:
         writer = csv.DictWriter(save_file, fieldnames=CLASSIFIED_CSV_FIELDS)
         writer.writeheader()
         writer.writerows(result)
     print('Wrote file {}'.format(save_filename))
+
+def main():
+    for section in MAGAZINE_SECTIONS:
+        result = classify(section)
+        save(result, section)
+
+if __name__ == '__main__':
+    main()

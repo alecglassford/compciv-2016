@@ -13,6 +13,6 @@ GENDER_DIR = path.join(DATA_DIR, 'gender')
 makedirs(GENDER_DIR, exist_ok=True)
 
 MAGAZINE_SECTIONS = ['reporting', 'talk-of-the-town', 'shouts-murmurs',
-                     'critics', 'fiction', 'poetry']
+                     'critics', 'fiction', 'poems']
 
 CSV_FIELD_NAMES = ['author', 'year', 'month', 'day']

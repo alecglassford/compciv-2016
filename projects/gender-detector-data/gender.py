@@ -17,4 +17,4 @@ def analyze_name(name):
     lower_name = name.lower()
     if lower_name in index:
         return index[lower_name]
-    return 'U', -1 # U means gender is unknown, -1 means undefined
+    return 'U', -1 # U means gender is unclassified, -1 means undefined
