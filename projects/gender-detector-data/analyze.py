@@ -66,10 +66,16 @@ def display(counts, sections):
     f_frac = [f/float(t) for f, t in zip(female, total)]
     m_frac = [m/float(t) for m, t in zip(male, total)]
     u_frac = [u/float(t) for u, t in zip(unclassified, total)]
+    total_sum = float(sum(total))
+    f_overall = sum(female) / total_sum
+    m_overall = sum(male) / total_sum
+    u_overall = sum(unclassified) / total_sum
 
     title = 'Fraction of New Yorker bylines from {} to {}\n(for {})'.format(
                                                 dates[0], dates[-1], sections)
+    print('\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
     print(title)
+    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
     print('{:<15}{:<8}{:<8}{:<8}{}'.format(
             'Date', 'Female', 'Male', 'Unclass.', 'Total'))
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
@@ -78,21 +84,28 @@ def display(counts, sections):
                 dates[i], female[i], male[i], unclassified[i], total[i],
                 '', percent_format(f_frac[i]), percent_format(m_frac[i]),
                 percent_format(u_frac[i]), total[i]))
+    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    print('Overall: {} female, {} male, {} unclassified\n\n'.format(
+            percent_format(f_overall), percent_format(m_overall),
+            percent_format(u_overall)))
 
     if can_plot:
-        plot(dates, f_frac, m_frac, title)
+        plot(dates, f_frac, m_frac, title, f_overall, m_overall)
 
-def plot(dates, f_frac, m_frac, title):
-    x_spacing = [i for i in range(len(dates))]
+def plot(dates, f_frac, m_frac, title, f_overall, m_overall):
+    x_spacing = [i+1 for i in range(len(dates))]
     plt.stackplot(x_spacing, f_frac, m_frac, labels=('Female', 'Male'),
                   colors=('r','b'))
+    plt.axhline(f_overall, linewidth=2, color='m')
+    plt.axhline(m_overall, linewidth=2, color='c')
     plt.xlabel('Date')
     plt.ylabel('Fraction of New Yorker bylines')
     plt.title(title)
     plt.xticks(takespread(x_spacing, MAX_X_TICKS),
                takespread(dates, MAX_X_TICKS), rotation=45)
     plt.yticks([i/10.0 for i in range(10)])
-    plt.legend(('Female', 'Male'))
+    plt.legend(('Overall female', 'Overall male', 'Female', 'Male'), loc='center right', fontsize='x-small')
+    plt.autoscale()
     plt.show()
 
 ############## For users to choose options

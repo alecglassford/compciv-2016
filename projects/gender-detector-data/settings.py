@@ -14,5 +14,3 @@ makedirs(GENDER_DIR, exist_ok=True)
 
 MAGAZINE_SECTIONS = ['reporting', 'talk-of-the-town', 'shouts-murmurs',
                      'critics', 'fiction', 'poems']
-
-CSV_FIELD_NAMES = ['author', 'year', 'month', 'day']
