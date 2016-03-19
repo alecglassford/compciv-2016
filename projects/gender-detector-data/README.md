@@ -38,8 +38,7 @@ I also think [Who Writes for the New York Times?](http://www.whowritesfor.com/),
 
 You can't easily `git clone` this project since it's a subfolder of a larger git repo. But amazingly this works:
 ```
-svn export https://github.com/alecglassford/compciv
--2016/trunk/projects/gender-detector-data
+svn export https://github.com/alecglassford/compciv-2016/trunk/projects/gender-detector-data
 ```
 
 #### Dependencies
@@ -71,7 +70,7 @@ After you have run `run.py` (or all the scripts sequentially) once, you should j
 
 First, we can look at all the sections by month from 2007 to the present (the period for which we have most complete data):
 
-![Figure 1][figure_1]
+![Figure 1: Stacked line graph of gender proportions of New Yorker bylines by month from 2007 to present. The "female" line is about 1/3 of the way up from the bottom; the "male" line is near the top.][figure_1]
 
 ```
 Fraction of New Yorker bylines from 2007-01 to 2016-03
@@ -108,17 +107,19 @@ Overall: (33%) female, (64%) male, (3%) unclassified
 
 We can see that about 1/3 of bylines are classified as female, and 2/3 are classified as male. Bummer. But maybe this is a huge improvement over the even less equitable olden days? Here's year by year from the start of the dataset:
 
-![Figure 2][figure_2]
+![Figure 2: Stacked line graph of gender proportions of New Yorker bylines by year from 1925 to present. The "female" line is about 1/3 of the way up from the bottom; the "male" line is near the top. There are several pretty noticeable (~10%?) variations.][figure_2]
 
 In fact, it looks like the percentage of *New Yorker* articles written by women hasn't changed that much since the magazine was founded in 1925. Of course, this graph should be taken with a boulder of salt: since the graph is of percentages, it's not obvious from it that the data from earlier years is much more sparse than from recent years (e.g. 217 total entries from 1970 compared to 1040 from 2012), and most of the earlier data is from fiction and poetry; the little bit of reporting from 20th century is that which has been hand-chosen for indexing on *The New Yorker*'s website. Nevertheless, it's interesting to see that the peak of female representation (at least when we weight fiction and poetry heavily) was in 1988 (44% of bylines)—and that it actually seemed to dip after that, during the editorship of Tina Brown, the magazine's first female editor, from 1992-1998.
 
 Which section of *The New Yorker* has the highest female representation? Well, here is the Critics section from 2007 to the present:
-![Figure 3][figure_3]
+
+![Figure 3: Stacked line graph of gender proportions of New Yorker bylines from the Critics section by month from 2007 to present. The "female" line is around 0.4 of the way up from the bottom, with spikes up to 0.6; the "male" line is near the top.][figure_3]
+
 Its bylines are 39% female. Unfortunately, avid *New Yorker* readers may realize that 143 of these bylines belong to [Sasha Frere-Jones](http://www.newyorker.com/contributors/sasha-frere-jones), whom the classifier misclassifies as female. Without those bylines, the proportion is closer to 35%.
 
 #### Conclusion
 
-It looks like we have a lot of work to do if we want to see gender equity in the journalistic/literary world—and I hope we really do. In the future, I'd love to repeat this analysis on the *New Yorker*'s granular (and sometimes absurdly specific) "departments" (e.g. Profiles, Annals of Technology, A Reproter at Large, Onward and Upward with the Arts, Letter for Chicago), as well as articles published solely online. I'm curious how the gender breakdown differs between these different subdomains.
+It looks like we have a lot of work to do if we want to see gender equity in the journalistic/literary world—and I hope we really do. In the future, I'd love to repeat this analysis on the *New Yorker*'s granular (and sometimes absurdly specific) "departments" (e.g. Profiles, Annals of Technology, A Reproter at Large, Onward and Upward with the Arts, Letter from Chicago), as well as articles published solely online. I'm curious how the gender breakdown differs between these different subdomains.
 
 [figure_1]: graphs/figure_1.png "Figure 1"
 [figure_2]: graphs/figure_2.png "Figure 2"
