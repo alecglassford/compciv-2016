@@ -119,7 +119,7 @@ Its bylines are 39% female. Unfortunately, avid *New Yorker* readers may realize
 
 #### Conclusion
 
-It looks like we have a lot of work to do if we want to see gender equity in the journalistic/literary world—and I hope we really do. In the future, I'd love to repeat this analysis on the *New Yorker*'s granular (and sometimes absurdly specific) "departments" (e.g. Profiles, Annals of Technology, A Reproter at Large, Onward and Upward with the Arts, Letter from Chicago), as well as articles published solely online. I'm curious how the gender breakdown differs between these different subdomains.
+It looks like we have a lot of work to do if we want to see gender equity in the journalistic/literary world—and I hope we really do. In the future, I'd love to repeat this analysis on the *New Yorker*'s granular (and sometimes absurdly specific) "departments" (e.g. Profiles, Annals of Technology, A Reporter at Large, Onward and Upward with the Arts, Letter from Chicago), as well as articles published solely online. I'm curious how the gender breakdown differs between these different subdomains.
 
 [figure_1]: graphs/figure_1.png "Figure 1"
 [figure_2]: graphs/figure_2.png "Figure 2"
